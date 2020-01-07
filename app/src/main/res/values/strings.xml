@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lottery FragmentTwo</string>
+    <string name="SwissLottery">Choose 6 numbers and 1 lucky number per tip. Draw: Every Wednesday and Saturday.</string>
+    <string name="EuroMillions">Choose 5 numbers and 2 stars per tip. Draw: Every Tuesday and Friday.</string>
+    <string name="btSwiss">Swiss Lottery</string>
+    <string name="btEuro">Euro Millions</string>
+</resources>
