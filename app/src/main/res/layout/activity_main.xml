@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:padding="8dp"
     android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btSwiss"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btSwiss"
-        android:onClick="selectFragment"/>
+        android:onClick="selectFragment"
+        android:text="@string/btSwiss" />
 
     <Button
         android:id="@+id/btEuro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btEuro"
-        android:onClick="selectFragment"/>
+        android:onClick="selectFragment"
+        android:text="@string/btEuro" />
 
     <fragment
         android:id="@+id/frFragmentPlace"

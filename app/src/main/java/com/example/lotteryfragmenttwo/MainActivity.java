@@ -2,10 +2,10 @@ package com.example.lotteryfragmenttwo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 
@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
             frFragment = new FragmentEuro();
         }
 
-        FragmentManager fm = getFragmentManager();
+        // Dynamic fragment: A dynamic Fragment isn't associated with a fragment tag and it is created in association with the FragmentManager.
+        FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         fragmentTransaction.replace(R.id.frFragmentPlace, frFragment);
         fragmentTransaction.commit();
-
     }
 }
